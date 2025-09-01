@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>BTS Top Songs</title>
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
     <header>
@@ -11,13 +11,15 @@
     </header>
     <nav>
         <ul>
-            <li>
-                <a href="index.html">Home</a>
+           <li>
+                <a href="/">Home</a>
             </li>
             <li>
-                <a href="webpages.html">Top Songs</a>
+                <a href="/webpages">Top Songs</a>
             </li>
-
+            <li>
+                <a href="/about">About</a>
+            </li>
         </ul>
     </nav>
     <main>
@@ -32,13 +34,16 @@
                 </tr>
             </thead>
             <tbody>
-                {% for Name in Names %}
+                {% for songs in song %}
                 <tr>
-                    <td>{{ Name[0] }}</td>
-                    <td>{{ Name[1] }}</td>
+                    <td>{{ songs[0] }}</td>
+                    <td>{{ songs[1] }}</td>
+                    <td>{{ songs[2] }}</td>
+                    <td>{{ songs[3] }}</td>
                 </tr>
+                {% endfor %}
             </tbody>
-         </table>
+        </table>
     </main>
 
 </body>
