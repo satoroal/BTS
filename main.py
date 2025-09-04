@@ -34,5 +34,9 @@ def render_webpages():
     print(songs_list)
     return render_template("webpages.html", song=songs_list)
 
+@app.route('/')
+def render_about():
+    return render_template("about.html")
+
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=81)
