@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+      {% block main %}
+       {% for album, name in album_dict.items() %}
+       <article>
+        <h3>{{ album }}</h3>
+        <p>
+          {% for songs in song %}
+            <p>{{ album }}</p>
+          {% endfor %}
+        </p>
+       </article>
+      {% endfor %}
+    </main>
+  {% endblock %}

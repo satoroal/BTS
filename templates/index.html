@@ -1,39 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>HTML and CSS Tags</title>
-  <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-      <header>
-        <h1>BTS Top Songs</h1>
-    </header>
-    <nav>
-        <ul>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/webpages">Top Songs</a>
-            </li>
-            <li>
-                <a href="/about">About</a>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Welcome</h2>
+{% extends "base.html" %}
+     {% block main %}
+        <h2>{{ title }}</h2>
         <p>BTS top songs!</p>
         <p>You will see BTS's top songs </p>
-    </main>
-  <script src="script.js"></script>
-
-  <!--
-    With thanks to WC
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
-</body>
+      {% endblock %}

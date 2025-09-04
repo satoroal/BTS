@@ -1,29 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>BTS Top Songs</title>
-    <link type="text/css" rel="stylesheet" href="/static/css/style.css">
-</head>
-<body>
-    <header>
-        <h1>BTS Songs</h1>
-    </header>
-    <nav>
-        <ul>
-           <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/webpages">Top Songs</a>
-            </li>
-            <li>
-                <a href="/about">About</a>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Top Songs</h2>
+{% extends "base.html" %}
+    {% block main %}
+        <h2>{{ title }}</h2>
         <table>
             <thead>
                 <tr>
@@ -44,7 +21,4 @@
                 {% endfor %}
             </tbody>
         </table>
-    </main>
-
-</body>
-</html>
+    {% endblock %}
