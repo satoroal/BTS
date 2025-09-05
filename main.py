@@ -23,7 +23,7 @@ def create_connection(db_file):
     
 @app.route('/catalouge')
 def render_catalouge():
-    query = "SELECT Name, Album, SongStreams, ReleaseDate FROM top_songs"
+    query = "SELECT Ranking, Name, Album, SongStreams, ReleaseDate, SongCover FROM top_songs"
     con = create_connection(DATABASE)
     cur = con.cursor()
 
@@ -37,15 +37,15 @@ def render_catalouge():
 def render_album():
     con = create_connection(DATABASE)
     cur = con.cursor()
-    songs_list = cur.fetchall()
-    print(songs_list)
+    query = "SELECT Name, Album FROM top_songs"
+    cur.execute(query)
+    album_list = cur.fetchall()
 
     album_dict = {}
-    for name, album in songs_list:
+    for name, album in album_list:
         if album not in album_dict:
             album_dict[album] = []
         album_dict[album].append(name)
-    print(album_dict)
     con.close()
     return render_template("album.html", album_dict = album_dict)
 

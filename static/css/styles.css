@@ -3,3 +3,43 @@ form {
     padding: 5px;
     margin: 5px;
 }
+
+.navbar {
+    background-color: black;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar li {
+    display: inline;
+    float: left;
+}
+
+.navbar a.active{
+    background-color: #04AA6D;
+    color: white;
+}
+
+.navbar a:hover {
+    color: black;
+}

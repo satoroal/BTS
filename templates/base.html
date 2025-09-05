@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>HTML and CSS Tags</title>
-  <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/static/css/styles.css" rel="stylesheet" />
 </head>
 
 <body>
       <header>
         <h1>BTS Top Songs</h1>
     </header>
-    <nav>
+    <nav class = "navbar">
         <ul>
             <li>
                 <a href="/">Home</a>
@@ -23,14 +23,12 @@
             <li>
                 <a href="/album">Album</a>
             </li>
-            <li>
-                <a href="/releasedate">Release Years</a>
-            </li>
-        </ul>
+
         <form method="POST" action ="/search">
             <input type="text" name="search" id="search">
             <input type="submit" value="Search">
         </form>
+        </ul>
     </nav>
     <main>
         {% block main %}{% endblock %}
