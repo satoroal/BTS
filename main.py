@@ -33,6 +33,18 @@ def render_catalouge():
     con.close()
     return render_template("catalouge.html", song=songs_list)
 
+@app.route('/song')
+def render_song():
+    query = "SELECT Ranking, Name, ReleaseDate, SongCover FROM top_songs"
+    con = create_connection(DATABASE)
+    cur = con.cursor()
+
+    #Query the database
+    cur.execute(query)
+    songs_list = cur.fetchall()
+    con.close()
+    return render_template("song.html", song=songs_list)
+
 @app.route('/album')
 def render_album():
     con = create_connection(DATABASE)

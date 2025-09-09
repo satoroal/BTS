@@ -1,5 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
 form {
-    border: 1px solid white;
+    float: right;
+    margin-right: 20px;
     padding: 5px;
     margin: 5px;
 }
@@ -14,13 +22,13 @@ form {
     background-color: black;
     padding: 0px;
     margin: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
 }
 
 .navbar a {
-    float: left;
+    display: flex;
+    justify-content: space-evenly;
+    width: 125px;
+    align-items: left;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -42,4 +50,20 @@ form {
 
 .navbar a:hover {
     color: black;
+}
+
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+main h2{
+    grid-column: 1/5;
+}
+
+article{
+    background-color: lightskyblue;
+    padding: 5px;
 }
