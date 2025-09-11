@@ -1,5 +1,6 @@
 {% extends "base.html" %}
       {% block main %}
+      <div class="album-main">
        {% for album, songs in album_dict.items() %}
        <article>
         <h3>{{ album }}</h3>
@@ -10,5 +11,5 @@
         </p>
        </article>
       {% endfor %}
-
+      </div>
   {% endblock %}

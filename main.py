@@ -92,7 +92,5 @@ def render_search():
     
     return render_template("catalouge.html", song=songs_list, tag=title)
 
-
-
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=81)

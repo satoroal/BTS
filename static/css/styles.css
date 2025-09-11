@@ -1,10 +1,3 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
 form {
     float: right;
     margin-right: 20px;
@@ -52,18 +45,33 @@ form {
     color: black;
 }
 
-main{
+.album-main{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 20px;
     column-gap: 20px;
 }
 
-main h2{
+.album-main h3{
     grid-column: 1/5;
 }
 
 article{
     background-color: lightskyblue;
     padding: 5px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th{ 
+    text-align: left;
+}
+
+.image-links {
+    display: flex;
+    justify-content: space-evenly
 }
