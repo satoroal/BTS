@@ -5,14 +5,19 @@ form {
     margin: 5px;
 }
 
+body {
+    background-color: #dcedff;
+    margin: 0;
+    padding: 0;
+}
+
 .navbar {
-    background-color: black;
+    background-color: #db9ce7;
     overflow: hidden;
 }
 
 .navbar ul {
     list-style-type: none;
-    background-color: black;
     padding: 0px;
     margin: 0px;
 }
@@ -23,12 +28,12 @@ form {
     width: 125px;
     align-items: left;
     color: white;
-    text-align: center;
     padding: 14px 16px;
-    display: block;
-    text-align: center;
     text-decoration: none;
     font-size: 17px;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .navbar li {
@@ -37,12 +42,11 @@ form {
 }
 
 .navbar a.active{
-    background-color: #04AA6D;
     color: white;
 }
 
 .navbar a:hover {
-    color: black;
+    color: #9734Ad;
 }
 
 .album-main{
@@ -54,10 +58,14 @@ form {
 
 .album-main h3{
     grid-column: 1/5;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
+
 article{
-    background-color: lightskyblue;
+    background-color:#8c9dcf;
     padding: 5px;
 }
 
@@ -73,5 +81,25 @@ th{
 
 .image-links {
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+}
+
+.image-links a{
+    text-decoration: none;
+    color: black;
+}
+
+tr a {
+    text-decoration: none;
+    color: black;
+}
+
+tr a:hover {
+    color: #9734ad;
+}
+
+th {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
 }

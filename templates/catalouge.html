@@ -4,9 +4,9 @@
         <table>
             <thead>
                 <tr>
-                    <th>Ranking</th>
-                    <th>Name</th>
-                    <th>Album</th>
+                    <th><a href="/sort?sort=Ranking&order={{ order }}">Ranking</a></th>
+                    <th><a href="/sort?sort=Name&order={{ order }}">Name</a></th>
+                    <th><a href="/sort?sort=Album&order={{ order }}">Album</a></th>
                     <th>Streams</th>
                     <th>Release Date</th>
                     <th>Cover</th>
@@ -22,7 +22,7 @@
                     <td>{{ songs[4] }}</td>
                     <td>
                         <div>
-                            <img src = "/static/images/{{ songs[5] }}.jpg" width = "100" height = "100" class="songcover">
+                            <img src = "/static/images/{{ songs[5] }}.jpg" width = "100" height = "100" class="songcover" alt="The song cover for {{ songs[1] }}">
                         </div>
                     </td>
                 </tr>
